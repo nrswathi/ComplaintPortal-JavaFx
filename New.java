@@ -114,7 +114,7 @@ public class New extends Application {
           try {
                  Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
-             con= DriverManager.getConnection("jdbc:mysql://localhost:3306/complaint","root","anu.ravi");
+             con= DriverManager.getConnection("jdbc:mysql://localhost:3306/complaint","root","pswd");  //enter password
              stmt = con.createStatement();
              ResultSet rs= stmt.executeQuery("SELECT * FROM login where username='"+checkUser+"'");
              
@@ -158,7 +158,7 @@ public class New extends Application {
                 try {
                        Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
-                   con= DriverManager.getConnection("jdbc:mysql://localhost:3306/listdb","root","anu.ravi");
+                   con= DriverManager.getConnection("jdbc:mysql://localhost:3306/listdb","root","pswd");
                    stmt = con.createStatement();
                    String sql="INSERT INTO listtable(name,complaint)"+"VALUES('"+name1+"','"+complaint1+"')";
                    printlab.setText("Complaint successfully registered");
