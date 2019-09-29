@@ -52,7 +52,7 @@ public class TrendingBox  {
         try {
         Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
-        con= DriverManager.getConnection("jdbc:mysql://localhost:3306/listdb","root","anu.ravi");
+        con= DriverManager.getConnection("jdbc:mysql://localhost:3306/listdb","root","pswd");
         stmt = con.createStatement();
         ResultSet rs= stmt.executeQuery("SELECT * from listtable");
         while(rs.next()) {
@@ -140,7 +140,7 @@ Statement stmt= null;
 try {
 Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
-con= DriverManager.getConnection("jdbc:mysql://localhost:3306/listdb","root","anu.ravi");
+con= DriverManager.getConnection("jdbc:mysql://localhost:3306/listdb","root","pswd");
 stmt = con.createStatement();
 ResultSet rs= stmt.executeQuery("SELECT * from listtable");
 
