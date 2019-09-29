@@ -15,7 +15,7 @@ public class AlertBox {
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(350);
-        String message ="\n\nThis is an online Complaint registration portal.\nYour complaints will be responded within 24 hours\nFor any further quieries contact 9449816281";
+        String message ="\n\nThis is an online Complaint registration portal.\nYour complaints will be responded within 24 hours\nFor any further quieries contact Xxxxxxxxxx";
         Label label = new Label();
         label.setText(message);
         Button closeButton = new Button("Back");
